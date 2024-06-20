@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="manifest" href="manifest.json">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div>
+            <h1>CHIN_SPELL</h1>
+        </div>
+        
+        <div>
+            <p id="result"></p>
+        </div>
+        
+        <div>
+            <input id="inputSpell">
+        </div>
+        <script type="module" src="script.js"></script>
+        <script type="module" src="spellData.js"></script>
+    </body>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('sw.js')
+              .then(registration => {
+                console.log('Service Worker registered:', registration);
+              })
+              .catch(error => {
+                console.error('Service Worker registration failed:', error);
+              });
+          });
+        }
+    </script>
+</html>
