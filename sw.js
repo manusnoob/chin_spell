@@ -3,6 +3,7 @@ self.addEventListener('install', (event) => {
       caches.open('v1').then((cache) => {
         return cache.addAll([
           '/', // Cache the homepage
+          '/test', // Add this line to cache the /test path
           'style.css', 
           'script.js', 
           'spellData.js', 
