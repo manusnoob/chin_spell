@@ -2,7 +2,7 @@
     "name": "CHIN_SPELL",
     "short_name": "CHIN_SPELL",
     "description": "A PWA for Chinese spelling.",
-    "start_url": "/",
+    "start_url": "/chin_spell",
     "display": "standalone",
     "background_color": "#181818",
     "theme_color": "#181818",
