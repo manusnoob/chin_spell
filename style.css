@@ -18,12 +18,21 @@ h1 {
     margin-bottom: 2rem;
 }
 
-.character-container {
+.up {
     width: 100%;
     background-color: #1f2937;
     border-radius: 0.5rem;
-    padding: 1.5rem;
     margin-bottom: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.character-container {
+    width: 80%;
+    height: 80%;
 }
 
 .chinese-character {
